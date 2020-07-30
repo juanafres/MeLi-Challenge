@@ -5,11 +5,11 @@ API Rest para validación de mutantes (?)
 # Información general
 Desarrollado en Python bajo el framework Flask.
 
-Posee 2 servicios rest hosteados en HEROKU
-Integrado con base de datos MongoDB.
+Posee 2 servicios rest hosteados en HEROKU **https://warm-river-14812.herokuapp.com/**
+Integrado con base de datos MongoDB hosteada en <https://cloud.mongodb.com>
 
 # Levantar el ambiente de desarrollo
-Se utilizó un entorno virtual para instalar las dependencias necesarias, se utilizó venv que viene incluido con python
+Se utilizó un entorno virtual para instalar las dependencias necesarias, venv que viene incluido con python
 Para instalarlo, dentro de la carpeta del proyecto, ejecutar:
 ``` python -m  venv venv ```
 
@@ -19,13 +19,13 @@ Una vez instalado para la activación del ambiente, ejecutar:
 Una vez activado el entorno virtual, seguir los siguientes pasos:
 
 1. Instalar las dependencias del archivo requirements.txt ``` pip install -r requirements.txt ```
-2. Indicar el main de la aplicación ``` $env:FLASK_APP = "server.py" ```
+2. Indicar el main de la aplicación ``` $env:FLASK_APP = "app.py" ```
 3. Levantar la aplicación desde el entorno virtual: ``` python -m flask run ```
 4. Para la construcción e instalación del paquete: ``` pip install wheel ```
 5. Construir el proyecto ejecutando ``` python setup.py bdist_wheel ```
 6. Tomar el archivo de extensión whl generado en la carpeta /dist y ejecutando ````pip install nombreArchivo.whl``` esta listo para ejecutar.
 
-# Instalación instancia MongoDB
+# Instalación instancia propia MongoDB
 1. Descargar la versión correspondiente para el SO que se utilice. http://www.mongodb.org/downloads
 2. Una vez instalado mongoDB se debe levantar una instancia con el comando ``` mongod ```
 3. En la aplicación se utiliza el puerto defautl que provee la conexion de la db. Port: 27017.  
